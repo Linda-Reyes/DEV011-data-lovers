@@ -1,8 +1,9 @@
 import { example } from './dataFunctions.js';
 import { renderItems } from './view.js';
+import data from './data/athletes/athletes.js';
 
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
-// import data from './data/rickandmorty/rickandmorty.js';
+//console.log(example, renderItems, data);//
 
-console.log(example, renderItems, data);
+const athletes = renderItems(data.athletes)
+console.log(athletes)
+
