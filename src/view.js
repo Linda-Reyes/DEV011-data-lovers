@@ -2,7 +2,7 @@
 
 export const renderItems = (data) => {
  const card = data.forEach(element => {
-  console.log(element.sport)
+  console.log(element.team)
 return(
   `<dl itemscope itemtype="front-card" class="flex-card">
     <dt>Nombre: </dt><dd itemprop="name">${element.name}</dd>

@@ -3,56 +3,52 @@
   <head>
   <meta charset="utf-8">
     <title>Data Lovers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header>
+      <img class="logo" src="Images/olim02.png" alt="logo">
       <h1>Juegos Olimpicos Rio 2016</h1>
-      <button class="open-menu">Filtros</button>
-      <nav class="filters-conteiner">
-        <button class="close-menu">Cerrar</button>
-        <ul class="filtersList visible">
-          <li>
-            <select name="sport" data-testid="select-filter">
-              <option value="sport">Deporte</option>
-            </select>
-          </li>
-          <li>
-            <select name="gender" data-testid="gender-select" >
-              <option value="f">Mujeres</option>
-              <option value="m">Hombres</option>
-            </select> 
-          </li>
-          <li>
-            <select name="country" data-testid="country-select">
-              <option value="name-country">Paises</option>
-            </select>
-          </li>
-          <li>
-            <select name="sort" data-testid="select-sort" >
-              <option value="asc">A - Z</option>
-              <option value="desc">Z - A</option>
-            </select>
-          </li>
-        </ul>
-        <section class="search-container">
-          <label for="search-athlete">
-            <input id="search-athlete" type="text" placeholder="Buscar atleta"/>
-            <span>lupa</span>
-          </label>
-        </section>
-        <label for="clear">
-          <button id="clear" data-testid="button-clear">Reiniciar</button>
-        </label>
-      </nav>
+      <button id="open" class="open-menu"><i class="bi bi-list"></i></button>
     </header>
+    
+    <section class="filters-conteiner">
+      <nav class="filtersList" id="nav" >
+        <button id="close" class="close-menu"><i class="bi bi-x-circle-fill"></i></button>
+        <select name="sport" data-testid="select-filter">
+          <option value="sport">Deporte</option>
+        </select>
+        <select name="gender" data-testid="gender-select" >
+          <option value="f">Mujeres</option>
+          <option value="m">Hombres</option>
+        </select>
+        <select name="country" data-testid="country-select">
+          <option value="name-country">Paises</option>
+        </select>
+        <select name="sort" data-testid="select-sort" >
+          <option value="asc">A - Z</option>
+          <option value="desc">Z - A</option>
+        </select>
+      </nav>
+      <section class="search-container">
+        <label for="search-athlete">
+          <input id="search-athlete" type="text" placeholder="Buscar atleta"/>
+          <span><i class="bi bi-search"></i></span>
+        </label>
+      </section>
+      <label for="clear">
+        <button id="clear" data-testid="button-clear">Reiniciar</button>
+      </label>
+    </section>
     <div class="clearfix"></div>
-    <!--<main>
-      <h2>Atletas Olimpicos 2016</h2>
+    <main>
+      <h2>Atletas Olimpicos</h2>
       <section id="root">
         <ul id="cards-conteiner">
           <li itemscope itemtype="front-card" class="flex-card">
+            <img class="logo" src="Images/logoCards copia.png" alt="logo">
             <span itemprop="name">Luc Abalo</span>
             <span itemprop="team">France</span>
             <span itemprop="sport">Deporte: Handball</span>
@@ -60,6 +56,87 @@
             <span itemprop="age">Edad: 31</span>
           </li>
           <li itemscope itemtype="back-card" class="flex-card">
+            <img class="logo" src="Images/Medal.png" alt="logo">
+            <span itemprop="medal">Silver</span>
+            <span itemprop="event">Handball Men's Handball</span>
+            <span itemprop="height">Estatura182</span>
+            <span itemprop="weight">Peso: 86</span>
+            <span itemprop="imc">IMC: 31</span>
+          </li>
+          <li itemscope itemtype="front-card" class="flex-card">
+            <img class="logo" src="Images/logoCards copia.png" alt="logo">
+            <span itemprop="name">Luc Abalo</span>
+            <span itemprop="team">France</span>
+            <span itemprop="sport">Deporte: Handball</span>
+            <span itemprop="gender">Genero: M</span>
+            <span itemprop="age">Edad: 31</span>
+          </li>
+          <li itemscope itemtype="back-card" class="flex-card">
+            <img class="logo" src="Images/Medal.png" alt="logo">
+            <span itemprop="medal">Silver</span>
+            <span itemprop="event">Handball Men's Handball</span>
+            <span itemprop="height">Estatura182</span>
+            <span itemprop="weight">Peso: 86</span>
+            <span itemprop="imc">IMC: 31</span>
+          </li>
+          <li itemscope itemtype="front-card" class="flex-card">
+            <img class="logo" src="Images/logoCards copia.png" alt="logo">
+            <span itemprop="name">Luc Abalo</span>
+            <span itemprop="team">France</span>
+            <span itemprop="sport">Deporte: Handball</span>
+            <span itemprop="gender">Genero: M</span>
+            <span itemprop="age">Edad: 31</span>
+          </li>
+          <li itemscope itemtype="back-card" class="flex-card">
+            <img class="logo" src="Images/Medal.png" alt="logo">
+            <span itemprop="medal">Silver</span>
+            <span itemprop="event">Handball Men's Handball</span>
+            <span itemprop="height">Estatura182</span>
+            <span itemprop="weight">Peso: 86</span>
+            <span itemprop="imc">IMC: 31</span>
+          </li>
+          <li itemscope itemtype="front-card" class="flex-card">
+            <img class="logo" src="Images/logoCards copia.png" alt="logo">
+            <span itemprop="name">Luc Abalo</span>
+            <span itemprop="team">France</span>
+            <span itemprop="sport">Deporte: Handball</span>
+            <span itemprop="gender">Genero: M</span>
+            <span itemprop="age">Edad: 31</span>
+          </li>
+          <li itemscope itemtype="back-card" class="flex-card">
+            <img class="logo" src="Images/Medal.png" alt="logo">
+            <span itemprop="medal">Silver</span>
+            <span itemprop="event">Handball Men's Handball</span>
+            <span itemprop="height">Estatura182</span>
+            <span itemprop="weight">Peso: 86</span>
+            <span itemprop="imc">IMC: 31</span>
+          </li>
+          <li itemscope itemtype="front-card" class="flex-card">
+            <img class="logo" src="Images/logoCards copia.png" alt="logo">
+            <span itemprop="name">Luc Abalo</span>
+            <span itemprop="team">France</span>
+            <span itemprop="sport">Deporte: Handball</span>
+            <span itemprop="gender">Genero: M</span>
+            <span itemprop="age">Edad: 31</span>
+          </li>
+          <li itemscope itemtype="back-card" class="flex-card">
+            <img class="logo" src="Images/Medal.png" alt="logo">
+            <span itemprop="medal">Silver</span>
+            <span itemprop="event">Handball Men's Handball</span>
+            <span itemprop="height">Estatura182</span>
+            <span itemprop="weight">Peso: 86</span>
+            <span itemprop="imc">IMC: 31</span>
+          </li>
+          <li itemscope itemtype="front-card" class="flex-card">
+            <img class="logo" src="Images/logoCards copia.png" alt="logo">
+            <span itemprop="name">Luc Abalo</span>
+            <span itemprop="team">France</span>
+            <span itemprop="sport">Deporte: Handball</span>
+            <span itemprop="gender">Genero: M</span>
+            <span itemprop="age">Edad: 31</span>
+          </li>
+          <li itemscope itemtype="back-card" class="flex-card">
+            <img class="logo" src="Images/Medal.png" alt="logo">
             <span itemprop="medal">Silver</span>
             <span itemprop="event">Handball Men's Handball</span>
             <span itemprop="height">Estatura182</span>
@@ -68,7 +145,7 @@
           </li>
         </ul>
       </section>
-    </main>-->
+    </main>
     <div class="clearfix"></div>
     <footer>@ Copyringhts by DL13 Barbara & Linda </footer>
     <script src="main.js" type="module"></script>
