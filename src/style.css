@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,48 +10,55 @@ body {
 }
 
 header {
-    background-color:rgb(8, 42, 47);
+    display: flex;
+    background-color:rgb(3, 27, 31);
     width: 100%;
     height: 100px;
     margin: 0px auto;
     border-bottom: 3px rgb(189, 233, 43);
-    padding: 0px;
-    top: 0%;
-    color: rgb(220, 250, 114);
+    padding: 20px;
+    top: 0;
     line-height: 100px;
-    text-align: center;
-    background-image: url('Images/olim02.png');
+    /*background-image: url('Images/olim02.png');
     background-repeat: no-repeat;
-    background-size: 100px; 
+    background-size: 100px;*/
+    justify-content: space-between;
 }
 
-.open-menu {
-    display: none;
+h1{
+    font-size: 28px;
+    color: rgb(220, 250, 114);
+    text-align: center;
+}
+.logo {
+    width: auto;
+    height: auto;
+    max-width: 7rem;
 }
 
-.close-menu {
-    display: none;
-}
-
-nav {
-    background: rgb(156, 209, 179);
+.filters-conteiner {
+    display: flex;
+    background: rgb(177, 226, 183);/*no se ve*/
     width: 100%;
     height: 40px;
-    display: flex;
     align-items: center;/*alinea de forma vertical*/
     border-bottom: 2px rgb(8, 42, 47);
-    justify-content: center;
-}
-
-nav select {
-    list-style: none;
-    margin: 10px;
-    line-height: 30px;
+    justify-content: space-between;/*center*/
+    padding: 1rem;/*?no veo cambio */
 }
 
 .filtersList {
     display: flex;
+    margin: 10px;
+    line-height: 30px;
 }
+
+/*.filtersList select {
+    text-decoration: none;
+    color: rgb(8, 42, 47);
+}*/
+
+
 .clearfix {
     clear: both;
 }
@@ -65,63 +73,90 @@ main {
 }
 
 h2 {
-    color: beige;
-
+    color: rgb(220, 250, 114);
+    text-align: center;
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
 }
+.cards-conteiner {
+    background-color: aqua;
+}
 
 .flex-card {
-    background-color: beige;
-    color: rgb(16, 37, 37);
-    border: 1px solid rgb(34, 63, 34);
-    width: 120px;
-    height: 150px;
+    background-color: rgb(1, 25, 27);
+    color: rgb(222, 222, 85);
+    border: 3px solid rgb(179, 237, 84);
+    margin: 50px;
+    padding: 20px;
+    width: 200px;
+    height: 250px;
     border-radius: 5px;
+    list-style-type: none;
+    gap: 1rem; /*separar los item*/
+    text-align: center;
+    align-items: center;
 }
+
 footer {
-    background-color:rgb(8, 42, 47);
+    background-color:rgb(2, 25, 28);
     color: rgb(173, 217, 177);
     width: 100%;
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    font-size: 14px;
+
   }
 
+.open-menu,
+.close-menu {
+    display: none;
+} 
+
 @media screen and (max-width:768px){
-    /*.open-menu,.close-menu{
+    .open-menu,
+    .close-menu{
         display: block;
     }
-    select{
-        display: none;
-    }*/
-    .filtersList {
+
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    .filtersList {/*nav*/
+        opacity: 0;
+        visibility: hidden;
+
         display: flex;
+        flex-direction: column;
         position: absolute;
         align-items: end;
         gap: 1rem;
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: #1c1c1c;
+        background-color: #05211a;
         padding: 2rem;
-        flex-direction: column;
-        box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
-        opacity: 0;
-        visibility: hidden;
+        box-shadow: 0 0 0 100vmax rgba(11, 122, 70, 0.5);
     }
-    .filtersList .visible{
+
+    .filtersList.visible {
         opacity: 1;
         visibility: visible;
     }
-    select {
-            align-items: end;
+    .filtersList select {
+        color: rgb(6, 34, 24);
     }
+    
+    /* {
+            align-items: end;
+    }*/
 }
 
