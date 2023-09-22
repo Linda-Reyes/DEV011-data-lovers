@@ -1,9 +1,12 @@
 import { example } from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/athletes/athletes.js';
-import athletes from './data/athletes/athletes.js';
 
 //console.log(example, renderItems, data);//
+
+const root = document.getElementById("root");
+root.appendChild(renderItems(data.athletes));
+
 
 
 const nav = document.querySelector("#nav");
