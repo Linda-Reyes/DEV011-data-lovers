@@ -1,11 +1,10 @@
 import { example } from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/athletes/athletes.js';
+import athletes from './data/athletes/athletes.js';
 
 //console.log(example, renderItems, data);//
 
-const athletes = renderItems(data.athletes)
-console.log(athletes)
 
 const nav = document.querySelector("#nav");
 const open = document.querySelector("#open");
