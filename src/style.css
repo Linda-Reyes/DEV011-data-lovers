@@ -77,12 +77,10 @@ h2 {
     text-align: center;
 }
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
-}
 .cards-conteiner {
     background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .flex-card {
