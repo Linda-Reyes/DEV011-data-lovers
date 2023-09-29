@@ -8,25 +8,21 @@ import data from './data/athletes/athletes.js';
 const root = document.getElementById("root");
 root.appendChild(renderItems(data.athletes));
 
-//Función que filtra por medallas
-
-//athletesArray(data.athletes);
-
-//filterBy(data.athletes, "medal", "Gold")
-//filterBy(data.athletes, "medal", "Silver")
-//filterBy(data.athletes, "medal", "Bronze")
-
-//console.log(filterBy)
-
 const selectMedal = document.querySelector ('select[name="medal"][data-testid="medal-filter"]');
-//const medalGold = document.querySelector ('option[value="Gold"]');
+const genderSelect = document.querySelector("select[data-testid='gender-filter']");
 
 selectMedal.addEventListener('change', (e) => {
   //llamando a función filtro medallas
-  const filterGold = filterBy(data.athletes, "medal", e.target.value);
+  const filterMedal = filterBy(data.athletes, "medal", e.target.value);
   root.innerHTML = "";
-  root.appendChild(renderItems(filterGold));
- 
+  root.appendChild(renderItems(filterMedal));
+});
+
+genderSelect.addEventListener("change",(e) => {
+  console.log(e.target.value);
+  const filterGender = filterBy(data.athletes,"gender",e.target.value);
+  root.innerHTML = "";
+  root.appendChild (renderItems(filterGender));
 });
 
 //Interacción y eventos para menú responsive
@@ -41,20 +37,3 @@ open.addEventListener("click", () => {
 close.addEventListener("click", () => {
   nav.classList.remove("visible");
 })
-
-/*
-const medalSelect = document.querySelector('select [name="medal"] [data-testid="medal-select"]');
-
-medalSelect.addEventListener('change', () => {
-
-  // Llama a la función correspondiente dependiendo de la medalla seleccionada
- 
-  if (selectedMedal === "Gold") {
-    filterBy(data.athletes, "medal", "Gold");
-  } else if (selectedMedal === "Silver") {
-    filterBy(data.athletes, "medal", "Silver");
-  } else if (selectedMedal === "Bronze") {
-    filterBy(data.athletes, "medal", "Bronze");
-  }
-  filterBy.innerHTML = 
-});*/
