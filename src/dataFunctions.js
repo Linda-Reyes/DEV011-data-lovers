@@ -1,13 +1,3 @@
-// estas funciones son de ejemplo
-/*
-export const example = () => {
-  return 'example';
-};
-
-export const anotherExample = () => {
-  return [];
-};
-*/
 
 export const athletesArray = (data) => {
   const newArr = data.map(pais => pais.team);
