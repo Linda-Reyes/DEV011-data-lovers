@@ -8,7 +8,6 @@ import data from './data/athletes/athletes.js';
 const root = document.getElementById("root");
 root.appendChild(renderItems(data.athletes));
 
-
 const dataAthletes = data.athletes;
 const selectMedal = document.querySelector ('select[name="medal"][data-testid="medal-filter"]');
 const genderSelect = document.querySelector('select[data-testid="gender-filter"]');
