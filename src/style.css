@@ -19,10 +19,9 @@ header {
     padding: 20px;
     top: 0;
     line-height: 100px;
-    /*background-image: url('Images/olim02.png');
-    background-repeat: no-repeat;
-    background-size: 100px;*/
     justify-content: space-between;
+    background-image: url("./Images/fondoOlimp.jpg");
+    background-repeat: no-repeat;
 }
 
 h1{
@@ -33,12 +32,14 @@ h1{
 .logo {
     width: auto;
     height: auto;
-    max-width: 9rem;
+    max-width: 10rem;
+    align-items: center;
+    
 }
 
 .filters-container {
     display: flex;
-    background: rgb(98, 189, 112);
+    background: rgb(151, 213, 151);
     width: 100%;
     height: 40px;
     align-items: center;/*alinea de forma vertical*/
@@ -50,14 +51,19 @@ h1{
 .filtersList {
     display: flex;
     margin: 10px;
+    padding: 10px;
     line-height: 30px;
 }
 
-/*.filtersList select {
-    text-decoration: none;
-    color: rgb(8, 42, 47);
-}*/
+.styleButton {
+    margin: 7px;
+    padding: 5px;
+    background-color: rgb(15, 54, 7);
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c2e4c0;
 
+}
 
 .clearfix {
     clear: both;
@@ -75,6 +81,8 @@ main {
 h2 {
     color: rgb(220, 250, 114);
     text-align: center;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .cards-container {
@@ -90,15 +98,17 @@ h2 {
     background-color: rgb(159, 210, 156);
     color: rgb(3, 27, 31);
     border: 3px solid rgb(151, 182, 101);
-    margin: 50px;
-    padding: 20px;
-    width: 200px;
-    height: 250px;
+    font-size: 15px;
+    margin: 30px;
+    padding: 15px;
+    width: 250px;
+    height: 300px;
     border-radius: 5px;
     list-style-type: none;
     gap: 1rem; /*separar los item*/
     text-align: center;
     align-items: center;
+    /*text-align: justify;*/
 }
 
 footer {
@@ -153,7 +163,7 @@ footer {
         visibility: visible;
     }
     .filtersList select {
-        color: rgb(6, 34, 24);
+        color: rgb(188, 225, 182);
     }
     
     /* {

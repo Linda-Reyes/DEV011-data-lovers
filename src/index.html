@@ -20,31 +20,32 @@
       <nav class="filtersList" id="nav">
         <button id="close" class="close-menu"><i class="bi bi-x-circle-fill"></i></button>
         <label for="gender-filter"></label>
-        <select id="gender-filter" name="gender" data-testid="gender-filter">
+        <select id="gender-filter" name="gender" data-testid="gender-filter" class= "styleButton">
           <option value="default">Genders</option>
           <option value="F">Femele</option>
           <option value="M">Man</option>
         </select>
         <label for="medal-filter"></label>
-        <select id="medal-filter" name="medal" data-testid="medal-filter">
+        <select id="medal-filter" name="medal" data-testid="medal-filter" class= "styleButton">
           <option value="default">Medals</option>
           <option value="Gold">Gold</option>
           <option value="Silver">Silver</option>
           <option value="Bronze">Bronze</option>
         </select>
-        <label for="select-sort">Sort for</label>
-        <select id="select-sort" name="sort" data-testid="select-sort">
+        <label for="select-sort"></label>
+        <select id="select-sort" name="sort" data-testid="select-sort" class= "styleButton">
+          <option value="asc">Sort for</option>
           <option value="asc">A - Z</option>
           <option value="desc">Z - A</option>
         </select>
+        <label for="clear"></label>
+        <button id="clear" data-testid="button-clear" class= "styleButton">Restart</button>
       </nav>
       <section class="search-container">
         <label for="search-athletes"></label>
           <input id="search-athletes" type="text" placeholder="Search Athletes" />
           <span><i class="bi bi-search"></i></span>
       </section>
-      <label for="clear"></label>
-        <button id="clear" data-testid="button-clear">Restart</button>
     </section>
     <div class="clearfix"></div>
     <div class="resultado"></div>
