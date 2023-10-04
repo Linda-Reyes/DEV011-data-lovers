@@ -16,13 +16,15 @@ export const renderItems = (data) => {
    
     // Crea la estructura para el frente de la tarjeta
     card.innerHTML = `
-    <img src= "./Images/logoCards.png" class="imgMedal">
+    <img src= "./Images/logoCards.png" class="imgLogo">
     <dt></dt><dd class="name" itemprop="name">${element.name}</dd>
-    <dt></dt><dd itemprop="team">${element.team}</dd>
-    <dt>Sport:</dt><dd itemprop="sport">${element.sport}</dd>
-    <dt>Gender:</dt><dd itemprop="gender">${element.gender}</dd>
-    <dt>Medal:</dt><dd itemprop="medal">${element.medal}</dd>
-    <dt>Event:</dt><dd itemprop="event">${element.event}</dd>
+    <dt></dt><dd class="team" itemprop="team">${element.team}</dd>
+    <dl class="elements">
+    <dt></dt><dd class="sport" itemprop="sport">Sport: ${element.sport}</dd>
+    <dt></dt><dd class="gender" itemprop="gender">Gender: ${element.gender}</dd>
+    <dt></dt><dd class="medal" itemprop="medal">Medal: ${element.medal}</dd>
+    </dl>
+    <dt>Event: </dt><dd class="event" itemprop="event">${element.event}</dd>
   `;
 
     // Crea un contenedor para cada par de tarjetas (frente y dorso)

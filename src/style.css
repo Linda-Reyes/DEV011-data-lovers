@@ -11,7 +11,7 @@ body {
 
 header {
     display: flex;
-    background-color:rgb(8, 42, 47);
+    background-color: rgb(8, 42, 47);
     width: 100%;
     height: 100px;
     margin: 0px auto;
@@ -22,11 +22,12 @@ header {
     justify-content: space-between;
 }
 
-h1{
+h1 {
     font-size: 28px;
     color: rgb(203, 230, 107);
     text-align: center;
     text-align: left;
+    margin-right: 50px;
 }
 
 .filters-container {
@@ -34,10 +35,13 @@ h1{
     background: rgb(151, 213, 151);
     width: 100%;
     height: 40px;
-    align-items: center;/*alinea de forma vertical*/
+    align-items: center;
+    /*alinea de forma vertical*/
     border-bottom: 2px rgb(8, 42, 47);
-    justify-content: space-between;/*center*/
-    padding: 1rem;/*?no veo cambio */
+    justify-content: space-between;
+    /*center*/
+    padding: 1rem;
+    /*?no veo cambio */
 }
 
 .filtersList {
@@ -47,7 +51,9 @@ h1{
     line-height: 30px;
 }
 
-.styleButton {
+#medal-filter,
+#gender-filter, 
+#select-sort {
     margin: 7px;
     padding: 5px;
     background-color: rgb(15, 54, 7);
@@ -55,12 +61,13 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     color: #c2e4c0;
 }
-
 #clear {
+    margin: 7px;
+    padding: 5px;
     background-color: rgb(203, 230, 107);
+    border-radius: 4px;
     color: #092922;
 }
-
 .clearfix {
     clear: both;
 }
@@ -87,9 +94,13 @@ h2 {
     flex-wrap: wrap;
     list-style-type: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
 }
-
+.imgLogo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .flex-card {
     background-color: rgb(159, 210, 156);
     color: rgb(3, 27, 31);
@@ -100,15 +111,37 @@ h2 {
     width: 250px;
     height: 300px;
     border-radius: 5px;
-    list-style-type: none;
-    gap: 1rem; /*separar los item*/
+    /*list-style-type: none;*/
+    gap: 1rem;
+    /*separar los item*/
     text-align: center;
-    align-items: center;
     /*text-align: justify;*/
+    position: relative;
 }
-
+.name {
+    font-size: 18px;
+    color:rgb(7, 75, 87);   
+    font-weight: bold; 
+    margin-top: 30px;
+}
+.team {
+    color:rgb(168, 111, 46);
+    font-size: 16px;
+    margin: 6px
+}
+.elements {
+    color: rgb(41, 102, 41);
+    font-size: 14px;
+    text-align: initial;
+    display: inline;
+    justify-content: left;
+}
+.event {
+    text-align: center;
+    font-size: 14px;
+}
 footer {
-    background-color:rgb(2, 25, 28);
+    background-color: rgb(2, 25, 28);
     color: rgb(173, 217, 177);
     width: 100%;
     position: fixed;
@@ -117,33 +150,39 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 14px;
-
-  }
+}
 
 .open-menu,
 .close-menu {
     display: none;
-} 
+}
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
+
     .open-menu,
-    .close-menu{
+    .close-menu {
         display: block;
     }
 
     header {
         display: flex;
     }
+
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+
     h1 {
         visibility: hidden;
     }
+
     h2 {
         font-size: 16px;
     }
-    .filtersList {/*nav*/
-        opacity: 0;
-        visibility: hidden;
 
+    .filtersList {
+        /*nav*/
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -161,12 +200,12 @@ footer {
         opacity: 1;
         visibility: visible;
     }
+
     .filtersList select {
         color: rgb(188, 225, 182);
     }
-    
+
     /* {
             align-items: end;
     }*/
 }
-
