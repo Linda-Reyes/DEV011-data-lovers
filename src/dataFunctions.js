@@ -40,3 +40,10 @@ export const sortAtheltes = (data,sortBy,sortOrden) => {
   return arraySort;
 }
 
+export const computeStat = (data) => {
+  const ages = data.map(athlete => athlete.age);
+  const totalAthletes = ages.length;
+  const sumAges = ages.reduce((acumulator, age) => acumulator + age, 0);
+  const averageAge = sumAges / totalAthletes;
+  return averageAge.toFixed(1);
+}
