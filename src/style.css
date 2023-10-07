@@ -3,12 +3,10 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
 body {
     background-color: rgb(8, 42, 47);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 header {
     display: flex;
     background-color: rgb(8, 42, 47);
@@ -21,7 +19,6 @@ header {
     line-height: 100px;
     justify-content: space-between;
 }
-
 h1 {
     font-size: 28px;
     color: rgb(203, 230, 107);
@@ -29,7 +26,6 @@ h1 {
     text-align: left;
     margin-right: 50px;
 }
-
 .filters-container {
     display: flex;
     background: rgb(151, 213, 151);
@@ -43,14 +39,12 @@ h1 {
     padding: 1rem;
     /*?no veo cambio */
 }
-
 .filtersList {
     display: flex;
     margin: 10px;
     padding: 10px;
     line-height: 30px;
 }
-
 #medal-filter,
 #gender-filter, 
 #select-sort {
@@ -71,7 +65,6 @@ h1 {
 .clearfix {
     clear: both;
 }
-
 main {
     display: flex;
     flex-direction: column;
@@ -80,20 +73,19 @@ main {
     background-color: rgb(8, 42, 47);
     background-position: center;
 }
-
 h2 {
     color: rgb(220, 250, 114);
     text-align: center;
     font-size: 20px;
     padding: 10px;
 }
-
 .cards-container {
     background-color: rgb(8, 42, 47);
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
 }
 .imgLogo {
     position: absolute;
@@ -111,30 +103,29 @@ h2 {
     width: 250px;
     height: 300px;
     border-radius: 5px;
-    /*list-style-type: none;*/
+    box-sizing: border-box;
     gap: 1rem;
-    /*separar los item*/
     text-align: center;
-    /*text-align: justify;*/
+    display: inline-block;
     position: relative;
 }
 .name {
-    font-size: 18px;
+    font-size: 22px;
     color:rgb(7, 75, 87);   
     font-weight: bold; 
     margin-top: 30px;
 }
 .team {
     color:rgb(168, 111, 46);
-    font-size: 16px;
-    margin: 6px
+    font-size: 18px;
+    font-weight: bold;
 }
 .elements {
     color: rgb(41, 102, 41);
     font-size: 14px;
-    text-align: initial;
     display: inline;
-    justify-content: left;
+    border-radius: 5px;
+    margin: 1px;
 }
 .event {
     text-align: center;
@@ -151,7 +142,6 @@ footer {
     padding: 10px;
     font-size: 14px;
 }
-
 .open-menu,
 .close-menu {
     display: none;
@@ -163,24 +153,19 @@ footer {
     .close-menu {
         display: block;
     }
-
     header {
         display: flex;
     }
-
     .logo {
         width: 100%;
         height: auto;
     }
-
     h1 {
         visibility: hidden;
     }
-
     h2 {
         font-size: 16px;
     }
-
     .filtersList {
         /*nav*/
         display: flex;
@@ -195,17 +180,11 @@ footer {
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(11, 122, 70, 0.5);
     }
-
     .filtersList.visible {
         opacity: 1;
         visibility: visible;
     }
-
     .filtersList select {
         color: rgb(188, 225, 182);
     }
-
-    /* {
-            align-items: end;
-    }*/
 }

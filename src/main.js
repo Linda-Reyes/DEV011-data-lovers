@@ -58,9 +58,9 @@ const statistics = computeStat(filteredAthletes);
 ageStatistics.innerHTML = "Average Age for Athletes: " + statistics;
 
 //Interacción y eventos para menú responsive
-const nav = document.getElementById("nav");
-const open = document.getElementById("open");
-const close = document.getElementById("close");
+const nav = document.querySelector("#nav");
+const open = document.querySelector("#open");
+const close = document.querySelector("#close");
 
 open.addEventListener("click", () => {
   nav.classList.add("visible");
