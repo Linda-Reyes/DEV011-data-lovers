@@ -12,8 +12,8 @@ const dataAthletes = data.athletes;
 const selectMedal = document.querySelector ('select[name="medal"][data-testid="medal-filter"]');
 const genderSelect = document.querySelector('select[data-testid="gender-filter"]');
 const selectSort = document.querySelector('select[id="select-sort"][name="sort"][data-testid="select-sort"]');
-const ageStatistics = document.getElementById('computeStat');
-const resetButton = document.getElementById('clear');
+const ageStatistics = document.querySelector('#computeStat');
+const resetButton = document.querySelector('#clear');
 let filteredAthletes = [...dataAthletes];
 
 //llamando a función filtro medallas

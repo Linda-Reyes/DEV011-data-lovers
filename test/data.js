@@ -1,14 +1,9 @@
-// Aqui puedes agregar los datos que necesites para tus pruebas
-// al menos debe tener uno que se llame "data"
 
 export const data = [ {
   "name": "Giovanni Abagnale",
   "gender": "M",
-  "height": "198",
-  "weight": "90",
   "sport": "Rowing",
   "team": "Italy",
-  "noc": "ITA",
   "age": 21,
   "event": "Rowing Men's Coxless Pairs",
   "medal": "Bronze"
@@ -16,11 +11,8 @@ export const data = [ {
 {
   "name": "Patimat Abakarova",
   "gender": "F",
-  "height": "165",
-  "weight": "49",
   "sport": "Taekwondo",
   "team": "Azerbaijan",
-  "noc": "AZE",
   "age": 21,
   "event": "Taekwondo Women's Flyweight",
   "medal": "Bronze"
@@ -28,13 +20,29 @@ export const data = [ {
 {
   "name": "Luc Abalo",
   "gender": "M",
-  "height": "182",
-  "weight": "86",
   "sport": "Handball",
   "team": "France",
-  "noc": "FRA",
   "age": 31,
   "event": "Handball Men's Handball",
   "medal": "Silver"
-},];
+},
+{
+  "name": "Taylor Ellis-Watson",
+  "gender": "F",
+  "sport": "Athletics",
+  "team": "United States",
+  "age": 23,
+  "event": "Athletics Women's 4 x 400 metres Relay",
+  "medal": "Gold"
+},
+{
+  "name": "Brittany Joyce Elmslie",
+  "gender": "F",
+  "sport": "Swimming",
+  "team": "Australia",
+  "age": 22,
+  "event": "Swimming Women's 4 x 100 metres Freestyle Relay",
+  "medal": "Gold"
+}
+];
 
