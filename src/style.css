@@ -108,23 +108,10 @@ h2 {
     padding: 15px;
     width: 250px;
     height: 300px;
-<<<<<<< HEAD
-    border-radius: 5px;
-    box-sizing: border-box;
-=======
     border-radius: 10px;
     /*list-style-type: none;*/
->>>>>>> 16ba1c1f24e31a4c215ff6bddbd77d79162fd9ed
     gap: 1rem;
     text-align: center;
-<<<<<<< HEAD
-    display: inline-block;
-    position: relative;
-}
-.name {
-    font-size: 22px;
-    color:rgb(7, 75, 87);   
-=======
     align-items: center;
     /*text-align: justify;*/
     position: relative;
@@ -132,34 +119,21 @@ h2 {
 .name {
     font-size: 19px;
     color:rgb(9, 61, 99);   
->>>>>>> 16ba1c1f24e31a4c215ff6bddbd77d79162fd9ed
     font-weight: bold; 
     margin-top: 30px;
 }
 .team {
-<<<<<<< HEAD
-    color:rgb(168, 111, 46);
-    font-size: 18px;
-    font-weight: bold;
-=======
     color:rgb(205, 124, 32);
     font-size: 14px;
     font-weight: bold; 
     margin: 4px;
     padding: 2px;
->>>>>>> 16ba1c1f24e31a4c215ff6bddbd77d79162fd9ed
 }
 .elements {
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(41, 102, 41);
-<<<<<<< HEAD
-    font-size: 14px;
-    display: inline;
-    border-radius: 5px;
-    margin: 1px;
-=======
     font-size: 12px;
     border: #05211a;
     margin: 0px;
@@ -184,7 +158,6 @@ h2 {
 .style-event {
     font-size: 10px;
     font-weight: bold;
->>>>>>> 16ba1c1f24e31a4c215ff6bddbd77d79162fd9ed
 }
 .event {
     font-size: 14px;
