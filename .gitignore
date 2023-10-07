@@ -6,3 +6,5 @@ node_modules/
 /playwright-report/
 /playwright/.cache/
 .vscode/
+package-lock.json 
+/src/Images/

@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <script src="main.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="Images/fondoOlimp.jpg" alt="logo">
+    <h1>Olympic Games</h1>
+    <button id="open" class="open-menu"><i class="bi bi-list"></i></button>
+  </header>
+
+    <section class="filters-container">
+      <nav class="filtersList" id="nav">
+        <button id="close" class="close-menu"><i class="bi bi-x-circle-fill"></i></button>
+        <label for="gender-filter"></label>
+        <select id="gender-filter" name="gender" data-testid="gender-filter">
+          <option value="default">Genders</option>
+          <option value="F">Femele</option>
+          <option value="M">Man</option>
+        </select>
+        <label for="medal-filter"></label>
+        <select id="medal-filter" name="medal" data-testid="medal-filter">
+          <option value="default">Medals</option>
+          <option value="Gold">Gold</option>
+          <option value="Silver">Silver</option>
+          <option value="Bronze">Bronze</option>
+        </select>
+        <label for="select-sort"></label>
+        <select id="select-sort" name="sort" data-testid="select-sort">
+          <option value="asc">Sort for</option>
+          <option value="asc">A - Z</option>
+          <option value="desc">Z - A</option>
+        </select>
+        <label for="clear"></label>
+        <button id="clear" data-testid="button-clear">Restart</button>
+      </nav>
+    </section>
+    <div class="clearfix"></div>
+    <div class="resultado"></div>
+    <main>
+      <h2 id="computeStat"></h2>
+      <section id="root"></section>
+  </main>
+  <div class="clearfix"></div>
+  <footer> Copyright by DL13 Barbara y Linda </footer>
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
