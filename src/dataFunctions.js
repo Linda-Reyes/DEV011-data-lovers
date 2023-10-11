@@ -7,7 +7,7 @@ export const filterBy = ((data, filterBy, value) => {
   return arrayFilter
 })
 
-export const sortAtheltes = (data,sortBy,sortOrden) => {
+export const sortAthletes = (data,sortBy,sortOrden) => {
   let arraySort = [];
   const dataCopy= [...data];
   if (sortOrden === "asc") {

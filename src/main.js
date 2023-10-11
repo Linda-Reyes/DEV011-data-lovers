@@ -1,4 +1,4 @@
-import {filterBy, sortAtheltes, computeStat} from './dataFunctions.js';
+import {filterBy, sortAthletes, computeStat} from './dataFunctions.js';
 import {renderItems} from './view.js';
 import data from './data/athletes/athletes.js';
 
@@ -36,7 +36,7 @@ genderSelect.addEventListener("change",(e) => {
 });
 //llamando a función de orden asc y desc
 selectSort.addEventListener("change",(e) => {
-  const generalSort = sortAtheltes(filteredAthletes,"name",e.target.value);
+  const generalSort = sortAthletes(filteredAthletes,"name",e.target.value);
   root.innerHTML = "";
   filteredAthletes = generalSort
   root.appendChild (renderItems(filteredAthletes));
@@ -58,9 +58,9 @@ const statistics = computeStat(filteredAthletes);
 ageStatistics.innerHTML = "Average Age for Athletes: " + statistics;
 
 //Interacción y eventos para menú responsive
-const nav = document.getElementById("nav");
-const open = document.getElementById("open");
-const close = document.getElementById("close");
+const nav = document.querySelector("#nav");
+const open = document.querySelector("#open");
+const close = document.querySelector("#close");
 
 open.addEventListener("click", () => {
   nav.classList.add("visible");
