@@ -52,6 +52,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     color: #eff0dd;
 }
+
 #clear {
     margin: 7px;
     padding: 5px;
@@ -60,6 +61,7 @@ h1 {
     color: #117627;
     border-color: #0eab89;
 }
+
 .clearfix {
     clear: both;
 }
@@ -85,6 +87,7 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
 }
+
 .imgLogo {
     position: absolute;
     top: 0;
@@ -93,6 +96,7 @@ h2 {
     height: 100px;
     right: 100px;
 }
+
 .flex-card {
     display: flex;
     flex-direction: column;
@@ -110,12 +114,14 @@ h2 {
     align-items: center;
     position: relative;
 }
+
 .name {
     font-size: 19px;
     color: rgb(9, 61, 99);
     font-weight: bold;
     margin-top: 30px;
 }
+
 .team {
     color: rgb(205, 124, 32);
     font-size: 14px;
@@ -123,6 +129,7 @@ h2 {
     margin: 4px;
     padding: 2px;
 }
+
 .elements {
     display: flex;
     justify-content: center;
@@ -133,6 +140,7 @@ h2 {
     margin: 0px;
     padding: 1rem;
 }
+
 .medal {
     background-image: url("Images/Medal.png");
     background-size: cover;
@@ -143,18 +151,22 @@ h2 {
     font-weight: bold;
     color: #116e70;
 }
+
 .sport {
     font-size: 16px;
     color: #117627;
     font-weight: bold;
 }
+
 .style-event {
     font-size: 10px;
     font-weight: bold;
 }
+
 .event {
     font-size: 14px;
 }
+
 footer {
     background-color: rgb(2, 25, 28);
     color: rgb(173, 217, 177);
@@ -190,15 +202,18 @@ footer {
     h2 {
         font-size: 16px;
     }
+
     .open-menu { 
         height: 35px;
         width: 35px;
         border-radius: 10px;
     }
+
     .close-menu {
         height: 35px;
         width: 35px;
     }
+
     .filtersList {
         opacity: 0;
         visibility: hidden;

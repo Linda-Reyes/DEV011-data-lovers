@@ -7,30 +7,22 @@ export const filterBy = ((data, filterBy, value) => {
   return arrayFilter
 })
 
-export const sortAthletes = (data,sortBy,sortOrden) => {
+export const sortAthletes = (data, sortBy, sortOrden) => {
   let arraySort = [];
-  const dataCopy= [...data];
+  const dataCopy = [...data];
   if (sortOrden === "asc") {
-    arraySort = dataCopy.sort((a,b) => {
+    arraySort = dataCopy.sort((a, b) => {
       if (a[sortBy] < b[sortBy]) {
         return -1;
       }
-      if (a[sortBy] > b[sortBy]) {
-        return 1;
-      }
-      return 0;
     });
   } else if (sortOrden === "desc") {
-    arraySort = dataCopy.sort((a,b) => {
+    arraySort = dataCopy.sort((a, b) => {
       if (b[sortBy] < a[sortBy]) {
         return -1;
       }
-      if (b[sortBy] > a[sortBy]) {
-        return 1;
-      }
-      return 0;
     });
-  } 
+  }
   return arraySort;
 }
 

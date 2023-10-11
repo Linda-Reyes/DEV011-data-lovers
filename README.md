@@ -21,7 +21,6 @@ En esta edición de los Juegos Olímpicos participaron 11.551 atletas de 207 com
 
 La elección de Río marcó la primera vez en que Brasil ha sido designado como sede de los Juegos Olímpicos. Además, es la primera vez que se realiza en un país sudamericano, la segunda en un país de Latinoamérica (la primera edición fue México 1968).
 
-
 ## 2. Resumen del proyecto
 
 Juegos Olímpicos de Río de Janeiro, fueron un evento multideportivo internacional, celebrado en la ciudad de Río de Janeiro, Brasil. La elección de Río marcó la primera vez que se realiza en un país sudamericano. Este evento tuvo gran acogida a nivel mundial, de todas estas personas hay un grupo que desea poder interactuar y ver la información de los atletas, los deportes olímpicos y los países que participaron.
@@ -85,4 +84,4 @@ Através de diferentes pruebas que se realizaron en la apliocación se tomaron l
 
 * Cambio de fondo unicolor, no tan colorido, para dar mas protagonismo a las tarjetas con la información de los atletas y no tener tanto ruido visual.
 * Las tarjetas llevan el fondo en la parte superior y asi que da mas espacio para la informacion, esta información tiene diferente gerarquia segun la importancia de los datos para el usuario. ![tipo-tarjetas](src/Images/Cards.jpg)
-* Suprimir el titulo en el diseño para movil, pero respaldarlo con una imagen caracteristiva de los juegos Olimpicos.
+* Suprimir el titulo en el diseño para movil, pero respaldarlo con una imagen caracteristiva de los juegos Olimpicos
