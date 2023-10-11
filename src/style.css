@@ -22,7 +22,6 @@ header {
 h1 {
     font-size: 28px;
     color: rgb(173, 243, 76);
-    text-align: center;
     text-align: left;
     margin-right: 50px;
 }
@@ -32,13 +31,10 @@ h1 {
     width: 100%;
     height: 60px;
     align-items: center;
-    /*alinea de forma vertical*/
     border-bottom: 2px rgb(39, 92, 4);
     justify-content: space-between;
-    /*center*/
     padding: 1rem;
     gap: 2rem;
-  
 }
 .filtersList {
     display: flex;
@@ -47,7 +43,7 @@ h1 {
     line-height: 30px;
 }
 #medal-filter,
-#gender-filter, 
+#gender-filter,
 #select-sort {
     margin: 7px;
     padding: 5px;
@@ -109,23 +105,21 @@ h2 {
     width: 250px;
     height: 300px;
     border-radius: 10px;
-    /*list-style-type: none;*/
     gap: 1rem;
     text-align: center;
     align-items: center;
-    /*text-align: justify;*/
     position: relative;
 }
 .name {
     font-size: 19px;
-    color:rgb(9, 61, 99);   
-    font-weight: bold; 
+    color: rgb(9, 61, 99);
+    font-weight: bold;
     margin-top: 30px;
 }
 .team {
-    color:rgb(205, 124, 32);
+    color: rgb(205, 124, 32);
     font-size: 14px;
-    font-weight: bold; 
+    font-weight: bold;
     margin: 4px;
     padding: 2px;
 }
@@ -138,18 +132,17 @@ h2 {
     border: #05211a;
     margin: 0px;
     padding: 1rem;
-  }
-  
-  .medal {
+}
+.medal {
     background-image: url("Images/Medal.png");
     background-size: cover;
     background-position: center;
-    width: 40px; 
+    width: 40px;
     height: 50px;
     font-size: 16px;
     font-weight: bold;
     color: #116e70;
-  }
+}
 .sport {
     font-size: 16px;
     color: #117627;
@@ -197,8 +190,19 @@ footer {
     h2 {
         font-size: 16px;
     }
+    .open-menu { 
+        height: 35px;
+        width: 35px;
+        border-radius: 10px;
+    }
+    .close-menu {
+        height: 35px;
+        width: 35px;
+    }
     .filtersList {
-        /*nav*/
+        opacity: 0;
+        visibility: hidden;
+
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -210,6 +214,7 @@ footer {
         background-color: #05211a;
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(11, 122, 70, 0.5);
+        z-index: 999;
     }
     .filtersList.visible {
         opacity: 1;
